@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>羽球場地預約系統</title>
+    <!-- 使用 Tailwind CSS 加速排版 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- 導覽列 -->
+    <nav class="gradient-bg p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center text-white">
+            <h1 class="text-xl font-bold tracking-wider">🏸 專業羽球隊</h1>
+            <ul class="flex space-x-6 text-sm">
+                <li><a href="index.html" class="hover:text-blue-200">首頁</a></li>
+                <li><a href="#" class="border-b-2 border-white pb-1">場地預約</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主要內容區 -->
+    <main class="container mx-auto px-4 py-8 max-w-4xl">
+        
+        <!-- 預約說明卡片 -->
+        <div class="bg-white rounded-xl shadow-md p-6 mb-8 border-l-4 border-blue-500">
+            <h2 class="text-2xl font-bold mb-4 text-blue-700">預約須知</h2>
+            <ul class="list-disc list-inside space-y-2 text-gray-600">
+                <li>請於活動前 **24 小時** 完成線上預約。</li>
+                <li>每場次限額 6 人，額滿即關閉該時段。</li>
+                <li>若需取消，請至 Line 群組告知管理員。</li>
+                <li class="font-semibold text-red-500">請確認填寫正確的聯絡電話。</li>
+            </ul>
+        </div>
+
+        <!-- 預約表單區塊 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="bg-gray-100 p-4 border-b">
+                <p class="text-center font-medium text-gray-700">請填寫下方表單完成預約</p>
+            </div>
+            
+            <div class="p-2">
+                <!-- 重要：請將下方的 src 連結替換成你自己的 Google 表單連結 -->
+                <iframe 
+                    src="https://docs.google.com/forms/d/e/你的表單ID/viewform?embedded=true" 
+                    width="100%" 
+                    height="800" 
+                    frameborder="0" 
+                    marginheight="0" 
+                    marginwidth="0"
+                    class="w-full">
+                    載入中…
+                </iframe>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- 頁尾 -->
+    <footer class="text-center py-8 text-gray-400 text-sm">
+        &copy; 2024 專業羽球隊 版權所有 | Powered by GitHub Pages
+    </footer>
+
+</body>
+</html>
